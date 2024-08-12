@@ -16,6 +16,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import java.text.DecimalFormat;
+import android.content.Intent;
+import my.project.ResultActivity;
 
 
 public class MainActivity extends AppCompatActivity
@@ -51,6 +53,13 @@ public class MainActivity extends AppCompatActivity
     {
         int id = item.getItemId();
         if (id == R.id.action_settings) return true;
+        else if(id == R.id.new_activity)
+        {
+            Intent intent = new Intent();
+            intent.setClass(MainActivity.this, ResultActivity.class);
+
+            startActivity(intent);
+        }
 
         return super.onOptionsItemSelected(item);
     }
