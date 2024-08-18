@@ -1,5 +1,4 @@
-package com.example.bmical;
-
+package com.example.bmicalpart_4;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
